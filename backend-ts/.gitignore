@@ -50,3 +50,6 @@ build/
 
 # Vscode settings
 .vscode/
+
+# Local extensions
+.history/
