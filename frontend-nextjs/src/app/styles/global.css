@@ -351,3 +351,22 @@
         font-size: 0.875em;
     }
 }
+
+/* Scrollbar styling for dark mode */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: theme(--color-brand-light);
+}
+
+::-webkit-scrollbar-thumb {
+    background: theme(--color-accent-500);
+    border-radius: theme(--radius-lg);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: theme(--color-accent-50);
+}

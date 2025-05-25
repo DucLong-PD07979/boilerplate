@@ -1,4 +1,6 @@
 // import { routing } from "@/libs/i18nRouting";
+import clsx from "clsx";
+import { twMerge } from "tailwind-merge";
 
 export const getBaseUrl = () => {
     // if (process.env.NEXT_PUBLIC_APP_URL) {
@@ -26,3 +28,7 @@ export const getBaseUrl = () => {
 
 //     return `/${locale}${url}`;
 // };
+
+export const mergeClassNames = (...classNames: (string | undefined)[]) => {
+    return twMerge(clsx(classNames));
+};
